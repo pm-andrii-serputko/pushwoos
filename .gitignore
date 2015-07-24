@@ -1,0 +1,7 @@
+.tmp
+bower_components
+build
+www
+node_modules
+report
+.DS_Store

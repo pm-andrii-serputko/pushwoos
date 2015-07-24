@@ -1,0 +1,16 @@
+<div class="row header">
+    <div class="col-xs-2 header-button active left cursor-pointer" ng-click="vm.back()">Back</div>
+    <div class="col-xs-8 header-title"><strong>{{vm.title}}</strong></div>
+    <div class="col-xs-2 header-button"></div>
+</div>
+<div class="row" ng-class="{'loading': !vm.isRemoteDataReady && !vm.isDataError}" ng-if="!vm.isRemoteDataReady && !vm.isDataError">
+    <div class="col-xs-12">Loading...</div>
+</div>
+<div class="row notification" ng-class="{'active': notification.unread}" ng-repeat="notification in vm.notifications track by notification.id">
+    <div class="col-xs-12 notification-body">
+        <div class="row">
+            <div class="col-xs-12 notification-title">{{notification.title}}</div>
+            <div class="col-xs-12 notification-message">{{notification.message}}</div>
+        </div>
+    </div>
+</div>

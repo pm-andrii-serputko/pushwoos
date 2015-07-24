@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>Pushwoosh</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <!-- build:css styles/app.css-->
+        <!-- inject:css -->
+        <link rel="stylesheet" href="/.tmp/styles.css">
+        <!-- endinject -->
+        <!-- endbuild -->
+    </head>
+    <body>
+
+        <div class="container-fluid" data-ng-view></div>
+        <!-- build:js scripts/lib.js-->
+        <!-- bower:js -->
+        <script src="/bower_components/jquery/dist/jquery.js"></script>
+        <script src="/bower_components/angular/angular.js"></script>
+        <script src="/bower_components/angular-route/angular-route.js"></script>
+        <script src="/bower_components/angular-resource/angular-resource.js"></script>
+        <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="/bower_components/angular-animate/angular-animate.js"></script>
+        <script src="/bower_components/validate/validate.js"></script>
+        <script src="/bower_components/angularjs-toaster/toaster.js"></script>
+        <script src="/bower_components/momentjs/moment.js"></script>
+        <script src="/bower_components/humanize-duration/humanize-duration.js"></script>
+        <script src="/bower_components/angular-timer/dist/angular-timer.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+        <script src="cordova.js"></script>
+        <!-- build:js scripts/app.js-->
+        <!-- inject:js -->
+        <script src="/src/client/scripts/app.module.js"></script>
+        <script src="/src/client/scripts/domain/domain.module.js"></script>
+        <script src="/src/client/scripts/resources/resources.module.js"></script>
+        <script src="/src/client/scripts/services/services.module.js"></script>
+        <script src="/src/client/scripts/modules/dashboard/dashboard.module.js"></script>
+        <script src="/src/client/scripts/modules/notifications/notifications.module.js"></script>
+        <script src="/src/client/scripts/app.routes.js"></script>
+        <script src="/src/client/scripts/app.run.js"></script>
+        <script src="/src/client/scripts/resources/notification.resourse.js"></script>
+        <script src="/src/client/scripts/services/notification.service.js"></script>
+        <script src="/src/client/scripts/services/pushwoosh.service.js"></script>
+        <script src="/src/client/scripts/domain/models/notification.model.js"></script>
+        <script src="/src/client/scripts/domain/repositories/notification.repository.js"></script>
+        <script src="/src/client/scripts/resources/parsers/mongoid.parser.js"></script>
+        <script src="/src/client/scripts/modules/components/header.directive.js"></script>
+        <script src="/src/client/scripts/modules/dashboard/dashboard.controller.js"></script>
+        <script src="/src/client/scripts/modules/dashboard/dashboard.routes.js"></script>
+        <script src="/src/client/scripts/modules/notifications/notifications.controller.js"></script>
+        <script src="/src/client/scripts/modules/notifications/notifications.routes.js"></script>
+        <!-- endinject -->
+
+        <!-- inject:templates:js -->
+        <!-- endinject -->
+
+        <!-- endbuild -->
+
+    </body>
+</html>

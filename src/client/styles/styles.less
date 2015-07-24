@@ -1,0 +1,107 @@
+@import '../../../bower_components/bootstrap/less/bootstrap.less';
+@icon-font-path: '../../../bower_components/bootstrap/fonts/';
+@header-background-color: #F6F6F7;
+@header-text-color: #000000;
+@header-button-color: #a7a7aa;
+@header-button-active-color: #FC3D39;
+@header-border-color: #A7A7AA;
+@notification-background-color: #EFEFF4;
+@notification-text-color: #8E8E93;
+@notification-input-color: #E9E9EE;
+/* input border: #CBCBD0*/
+
+@notification-border-color: #C8C7CC;
+@notification-active-background-color: #FFFFFF;
+@notification-active-text-color: #000000;
+@notification-active-input-color: #53D769;
+/* input border: #3FA450*/
+
+@footer-background-color: #FFFFFF;
+@footer-button-color: #929292;
+@footer-active-button-color: #FC3D39;
+@header-text-color: #929292;
+.cursor-pointer {
+    cursor: pointer;
+}
+.align-right {
+    text-align: right;
+}
+.header {
+    background: @header-background-color;
+    border-bottom: 1px solid @header-border-color;
+    font-size: 14px;
+}
+.header-button {
+    padding: 15px 10px;
+    color: @header-button-color;
+    &.right {
+        text-align: right;
+    }
+    &.left {
+        text-align: left;
+    }
+    &.active {
+        color: @header-button-active-color;
+    }
+}
+.header-title {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 18px;
+}
+.notification {
+    background: @notification-background-color;
+    border-bottom: 1px solid @notification-border-color;
+    color: @notification-text-color;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 0.3s linear all;
+    &.active {
+        background: @notification-active-background-color;
+        color: @notification-active-text-color;
+        transition: 0.3s linear all;
+    }
+    &.ng-leave {
+        opacity: 1;
+    }
+    &.ng-leave-active {
+        opacity: 0;
+    }
+}
+.notification-title {
+    font-size: 32px;
+    line-height: 32px;
+}
+.notification-message {
+    font-size: 12px;
+    line-height: 12px;
+}
+.loading {
+    text-align: center;
+    color: #8E8E93;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 40px;
+}
+.loading.ng-leave {
+    transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s;
+    transition-delay: 0.3s;
+}
+.loading.ng-leave {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 40px;
+}
+.loading.ng-leave.ng-leave-active {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 0;
+    font-size: 0;
+}
+
+/*.loading.ng-enter {
+    opacity: 0;
+}
+.loading.ng-enter.ng-enter-active {
+    opacity: 1;
+}*/
